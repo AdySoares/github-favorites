@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <title>GitHub Favorites</title>
+
+  <script src="./Js/main.js" type="module" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="App">
+    <header>
+      <H1>GitHub Favorites</H1>
+      <div class="Search">
+        <label for="githubUser" class="
+        sr-only">Usuário do Github</label>
+        <input type="text" name="nome" id="GithubUser" placeholder="Usuário do Github">
+        <button id="btnAddUser">&plus;</button>
+      </div>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <th>Usuário</th>
+          <th>Repositórios</th>
+          <th>Seguidores</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="User">
+            <img src="https://www.github.com/AdySoares.png" alt="Imagem do usuário de Adson">
+            <a href="https://www.github.com/AdySoares" target="_blank">
+              <p>Adson Santos Soares</p>
+              <span>AdySoares</span>
+            </a>
+          </td>
+          <td class="Repositores">
+            8
+          </td>
+          <td class="Followers">
+            0
+          </td>
+          <td class="Remove">
+            <button id="btnRemove">&times;</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</body>
+</html>
